@@ -7,6 +7,8 @@ Extend this code with MQTT or any other protocol or service to send and/or extra
 At the moment only the MPPT 75/10 is configured in the `config.h`.
 
 ## Usage
+Make sure the RX and TX of the VE.Direct-Protocol are connected to the corresponding pins in the setup, `victronSerial`. On the NodeMCU, pins D7/D8 are used.
+
 Every second the MPPT sends out data, this is put into the `value` array. As per code the `PrintValues()` function loops of the array and prints the values and keys. 
 
 The values can also be used with the macros defined, eg. `value[VPV]` or `value[ERR]`.
