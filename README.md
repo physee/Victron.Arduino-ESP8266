@@ -4,7 +4,7 @@ Code to read the VE.Direct-Protocol from serial into a value array. Uses a non-b
 Extend this code with MQTT or any other protocol or service to send and/or extract the data.
 
 ## Config
-At the moment only the MPPT 75/10 is configured in the `config.h`.
+At the moment the MPPT 75/10 and the 100/20 are configured in the `config.h`.
 
 ## Usage
 Make sure the RX and TX of the VE.Direct-Protocol are connected to the corresponding pins in the setup, `victronSerial`. On the NodeMCU, pins D7/D8 are used.
